@@ -62,7 +62,7 @@ app.use('/patients', patient);
 app.use('/users', user);
 
 
-let port = 1234;
+const port = process.env.PORT || 1234;
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
